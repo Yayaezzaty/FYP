@@ -1,0 +1,136 @@
+/* Base Styles */
+:root {
+    --primary-color: #4a6bff;
+    --error-color: #ff4757;
+    --success-color: #2ed573;
+    --text-color: #333;
+    --light-gray: #f1f1f1;
+    --medium-gray: #ccc;
+    --dark-gray: #666;
+    --white: #fff;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.background {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Form Container */
+.forgot-container {
+    width: 100%;
+    max-width: 450px;
+}
+
+.form-box {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+.form-box h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.instructions {
+    color: var(--dark-gray);
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* Input Fields */
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--medium-gray);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.input-group input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.input-group label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: var(--dark-gray);
+    transition: var(--transition);
+    pointer-events: none;
+    background: var(--white);
+    padding: 0 5px;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: var(--primary-color);
+}
+
+.error-message {
+    color: var(--error-color);
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+    text-align: left;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #3a5bef;
+}
+
+.loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width

@@ -1,0 +1,279 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color:#1e3a5f;
+    padding: 20px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    color: #FFF
+    
+}
+.logo {
+    width: 200px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+nav ul li {
+    margin: 0 15px;
+    display: inline;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+nav ul li a:hover {
+color: #ff9800; /* Change text color on hover */
+border-bottom: 3px solid #ff9800; /* Add an underline effect */
+}
+
+/* Filter Section */
+.filter-container {
+    margin: 20px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Product Grid */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    
+}
+
+.product {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin:20px;
+    box-shadow: 0 4px 8px rgba (0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.image-container {
+    position: relative;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.thumbnail-container img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.thumbnail-container img:hover {
+    border-color: orange;
+}
+
+h3 {
+    margin: 10px 0;
+    color: #6D4C41;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #D2691E;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Button */
+.add-to-cart {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #E07B00;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #1e3a5f; /* Dark Brown */
+    color:white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Center Content */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items */
+}
+
+/* Title Center */
+.footer-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    color:#FF7700;
+    font-style: normal;
+}
+
+/* Flexbox Layout for Boxes */
+.footer-content {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px; /* Add spacing */
+    width: 100%;
+}
+
+/* Footer Boxes */
+.footer-box {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #FF7700;
+    border-radius: 10px;
+    text-align: left;
+    min-width: 280px; /* Prevent boxes from being too small */
+}
+
+/* Social Button */
+.social-btn {
+    background: none;
+    border: 1px solid #FF7700;
+    padding: 10px;
+    color: white;
+    font-style: italic;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.social-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#cartCount{
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    left: -5px;
+}
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    background-color: #f7f4f0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.filter-box {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #5a4636;
+}
+
+.filter-box label {
+    margin-bottom: 5px;
+}
+
+.filter-box select,
+.filter-box input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.filter-btn {
+    padding: 8px 15px;
+    background-color: #8b572a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+.filter-btn:hover {
+    background-color: #6f4620;
+}
+
+.discount-badge {
+    position: absolute;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: grey;
+    font-size: 14px;
+}
+
+.discounted-price {
+    color: #ff6600;
+    font-size: 18px;
+    font-weight: bold;
+}
+

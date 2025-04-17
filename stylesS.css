@@ -1,0 +1,175 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Background with Blurred Overlay */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('background1.svg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Overlay for Glassmorphism Effect */
+.background {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centered Form Container */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Bigger, Stylish Form Box */
+.form-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 50px;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: white;
+}
+
+/* Form Title */
+.form-box h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* Input Group */
+.input-group {
+    position: relative;
+    margin: 25px 0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    font-size: 18px;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+
+/* Floating Labels */
+.input-group label {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -10px;
+    left: 15px;
+    font-size: 14px;
+    color: #F97316;
+}
+
+/* Better Custom Select Box */
+.custom-select {
+    position: relative;
+    margin: 25px 0;
+    background: rgba(118, 113, 113, 0.2);
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 18px;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Make Select Look Like an Input */
+.custom-select select {
+    width: 100%;
+    background: transparent;
+    color: black;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+}
+
+/* Custom Arrow */
+.custom-select::after {
+    content: '\f107';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: white;
+    pointer-events: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 15px;
+    background: #F97316;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: #ea580c;
+    transform: scale(1.05);
+}
+
+/* Links */
+p {
+    margin-top: 20px;
+}
+
+a {
+    color: #051b57;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Position the eye icon inside the input */
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group .toggle-password {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    user-select: none; /* Prevent text selection */
+}
+
+.input-group .toggle-password:hover {
+    color: black;
+}
+

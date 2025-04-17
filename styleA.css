@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: white;
+}
+
+header {
+    background-color:#1e3a5f !important;
+    padding: 20px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    color: #FFF;
+    
+}
+.logo {
+    width: 200px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+nav ul li {
+    margin: 0 15px;
+    display: inline;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+nav ul li a:hover {
+color: #ff9800; /* Change text color on hover */
+border-bottom: 3px solid #ff9800; /* Add an underline effect */
+}
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('motorcycle-hero.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #ff4c29;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #ff4c29;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #e03e1a;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    gap: 40px;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about h2 {
+    font-size: 32px;
+    color: #ff4c29;
+}
+
+.about-image img {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 76, 41, 0.5);
+}
+
+/* Values Section */
+.values {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    gap: 40px;
+}
+
+.value-box {
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.value-box:hover {
+    transform: translateY(-10px);
+}
+
+.value-box i {
+    font-size: 40px;
+    color: #ff4c29;
+}
+
+.value-box h3 {
+    margin-top: 15px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #1e3a5f; /* Dark Brown */
+    color:white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Center Content */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items */
+}
+
+/* Title Center */
+.footer-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    color:#FF7700;
+    font-style: normal;
+}
+
+/* Flexbox Layout for Boxes */
+.footer-content {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px; /* Add spacing */
+    width: 100%;
+}
+
+/* Footer Boxes */
+.footer-box {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #FF7700;
+    border-radius: 10px;
+    text-align: left;
+    min-width: 280px; /* Prevent boxes from being too small */
+}
+
+/* Social Button */
+.social-btn {
+    background: none;
+    border: 1px solid #FF7700;
+    padding: 10px;
+    color: white;
+    font-style: italic;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.social-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}

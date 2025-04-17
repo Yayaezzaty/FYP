@@ -1,0 +1,80 @@
+/* Checkout Page */
+.checkout-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Cart Summary */
+.cart-summary {
+    background: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.item-details h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.item-details p {
+    margin: 2px 0;
+    font-size: 14px;
+    color: gray;
+}
+
+/* Checkout Form */
+.checkout-form {
+    text-align: left;
+}
+
+.checkout-form label {
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+}
+
+.checkout-form input, .checkout-form textarea, .checkout-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Checkout Button */
+.checkout-btn {
+    display: block;
+    width: 100%;
+    background: #ff6600;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.checkout-btn:hover {
+    background: #e65c00;
+}

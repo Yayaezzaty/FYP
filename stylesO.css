@@ -1,0 +1,188 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+}
+
+header {
+    background-color:#1e3a5f;
+    padding: 20px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    color: #FFF
+    
+}
+.logo {
+    width: 200px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+nav ul li {
+    margin: 0 15px;
+    display: inline;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+nav ul li a:hover {
+color: #ff9800; /* Change text color on hover */
+border-bottom: 3px solid #ff9800; /* Add an underline effect */
+}
+
+/* Service Details Section */
+.service-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+    background: white;
+    border-radius: 10px;
+    margin: 40px auto;
+    width: 85%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-video video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.service-info {
+    max-width: 500px;
+    padding: 20px;
+}
+
+.service-info h1 {
+    color: #1E3A5F;
+}
+
+.service-info h2 {
+    color: #FF8C00;
+    margin-top: 20px;
+}
+
+.service-info ul {
+    padding-left: 20px;
+}
+
+.service-info ul li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #FF8C00;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #E67E00;
+}
+
+/* Footer */
+footer {
+    background: #1E3A5F;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Footer Styling */
+.footer {
+    background-color: #1e3a5f; /* Dark Brown */
+    color:white;
+    padding: 40px 20px;
+    text-align: center;
+   
+}
+
+/* Center Content */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items */
+}
+
+/* Title Center */
+.footer-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    color:#FF7700;
+    font-style: normal;
+}
+
+/* Flexbox Layout for Boxes */
+.footer-content {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px; /* Add spacing */
+    width: 100%;
+}
+
+/* Footer Boxes */
+.footer-box {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #FF7700;
+    border-radius: 10px;
+    text-align: left;
+    min-width: 280px; /* Prevent boxes from being too small */
+}
+
+/* Social Button */
+.social-btn {
+    background: none;
+    border: 1px solid #FF7700;
+    padding: 10px;
+    color: white;
+    font-style: italic;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.social-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+#cartCount {
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    left: -5px;
+}

@@ -1,0 +1,110 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0F2C59; /* Dark blue background */
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Title */
+h2 {
+    color: #FF8C00; /* Orange */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Product Grid - Ensure 3 items per row */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between items */
+    justify-content: center;
+    align-items: start;
+}
+/* Product Card */
+.product-card {
+    background: #1B3A6B; /* Slightly lighter blue */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(255, 140, 0, 0.3); /* Orange glow */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(255, 140, 0, 0.5);
+}
+
+/* Product Image */
+.product-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Product Name */
+.product-card h3 {
+    color: #FF8C00;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+/* Product Description */
+.product-card p {
+    font-size: 0.9rem;
+    color: #d3d3d3;
+}
+
+/* Price Styling */
+.price, .new-price {
+    font-weight: bold;
+    color: #FF8C00;
+    font-size: 1.3rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #d3d3d3;
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+/* Add to Cart Button */
+button {
+    background: #FF8C00;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #E67E22;
+}
+
+/* Responsive Design - Adjust for smaller screens */
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+    }
+}
